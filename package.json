@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fix-esm": "^1.0.1",
+    "got": "^11.8.2",
+    "nodemon": "^3.1.4"
+  },
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

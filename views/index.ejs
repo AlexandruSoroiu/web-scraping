@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #444;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        form {
+            margin-top: 150px;
+            width: 500px;
+            max-width: 450px;
+            border: 1px solid #eee;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+
+        form input {
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        form input[type="submit"] {
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            padding: 15px;
+            border: none;
+            color: #fff;
+            background-color: rgb(236, 110, 110);
+            font-size: 14px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
+
+        }
+
+        form input[type="submit"]:hover {
+            color: rgb(236, 110, 110);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .value {
+            align-self: center;
+            color: #fff;
+            font-size: 48px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
+
+        }
+    </style>
+    <form action="send-url" method="post">
+        <input type="text" placeholder="Type your URL here ..." name="myurl">
+        <input type="submit" value="Send">
+    </form>
+
+    <div class="container">
+        <p class="value">
+            <% if (value != '') { % >
+                <%- title %> : <%= value %>
+            <% } %>
+        </p>
+    </div>
+</body>
+
+</html>
